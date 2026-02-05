@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nomad Byte Studio</title>
+  <title>Contacto | Nomad Byte Studio</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,11 +42,11 @@
       </div>
     </div>
     <nav class="nav">
-      <a class="active" href="index.html" data-i18n="nav.home">Inicio</a>
+      <a href="index.html" data-i18n="nav.home">Inicio</a>
       <a href="services.html" data-i18n="nav.services">Servicios</a>
       <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
       <a href="process.html" data-i18n="nav.process">Metodología</a>
-      <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+      <a class="active" href="contact.html" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="header-actions">
       <label class="language-select" for="languageSelect" aria-label="Language">
@@ -60,42 +60,55 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Estudio de desarrollo + IA</p>
-        <h1 data-i18n="hero.title">Creamos software, experiencias y mundos con inteligencia artificial.</h1>
-        <p class="hero-description" data-i18n="hero.description">
-          Nomad Byte Studio es un laboratorio nómada de ingeniería y diseño. Construimos productos digitales
-          —apps, webs, videojuegos y automatizaciones— con una visión futurista, elegante y centrada en resultados.
+    <section class="section contact">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+        <h2 data-i18n="contact.title">Conectemos y construyamos tu próximo producto.</h2>
+        <p class="section-description" data-i18n="contact.description">
+          Completa el formulario y recibirás una respuesta rápida. Integramos el formulario con Supabase.
         </p>
-        <div class="hero-actions">
-          <a class="primary-btn" href="projects.html" data-i18n="cta.secondary">Ver proyectos</a>
-          <a class="ghost-btn" href="contact.html" data-i18n="cta.tertiary">Hablemos</a>
-        </div>
-        <div class="hero-stats">
-          <div>
-            <span class="stat">AI</span>
-            <p data-i18n="stats.ai">Flujos inteligentes que reducen tiempos y costos.</p>
-          </div>
-          <div>
-            <span class="stat">UX</span>
-            <p data-i18n="stats.ux">Diseño oscuro y futurista para destacar tu marca.</p>
-          </div>
-          <div>
-            <span class="stat">Full-stack</span>
-            <p data-i18n="stats.fullstack">Del concepto al despliegue, todo en un mismo equipo.</p>
-          </div>
-        </div>
       </div>
-      <div class="hero-visual">
-        <div class="orb"></div>
-        <div class="glass-card">
-          <p class="glass-title" data-i18n="hero.cardTitle">Proyectos actuales</p>
+      <div class="contact-wrapper">
+        <form id="contactForm" class="contact-form">
+          <label>
+            <span data-i18n="contact.form.name">Nombre</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span data-i18n="contact.form.email">Correo</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span data-i18n="contact.form.type">Tipo de proyecto</span>
+            <select name="type" required>
+              <option value="web" data-i18n="contact.form.options.web">Web / App</option>
+              <option value="game" data-i18n="contact.form.options.games">Videojuego</option>
+              <option value="ai" data-i18n="contact.form.options.ai">IA / Automatización</option>
+              <option value="other" data-i18n="contact.form.options.other">Otro</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="contact.form.message">Mensaje</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="primary-btn" type="submit" data-i18n="contact.form.submit">Enviar mensaje</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+        <div class="contact-panel">
+          <h3 data-i18n="contact.panel.title">Supabase listo</h3>
+          <p data-i18n="contact.panel.body">
+            Solo agrega tu URL y clave anónima. Los datos se enviarán a la tabla <strong>contacts</strong>.
+          </p>
+          <p data-i18n="contact.panel.details">Necesitas una tabla con estos campos:</p>
           <ul>
-            <li data-i18n="hero.cardItem1">Webs interactivas con IA</li>
-            <li data-i18n="hero.cardItem2">Bots de Discord y automatización</li>
-            <li data-i18n="hero.cardItem3">Videojuegos narrativos</li>
+            <li><strong>id</strong> (uuid, PK)</li>
+            <li><strong>name</strong> (text)</li>
+            <li><strong>email</strong> (text)</li>
+            <li><strong>type</strong> (text)</li>
+            <li><strong>message</strong> (text)</li>
+            <li><strong>created_at</strong> (timestamp)</li>
           </ul>
+          <p data-i18n="contact.panel.schema">El esquema SQL completo está en <strong>supabase/schema.sql</strong>.</p>
         </div>
       </div>
     </section>

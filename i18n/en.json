@@ -1,0 +1,121 @@
+{
+  "tagline": "Nomad technology. Creative intelligence.",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "process": "Process",
+    "contact": "Contact"
+  },
+  "cta": {
+    "primary": "Book a call",
+    "secondary": "View projects",
+    "tertiary": "Let’s talk"
+  },
+  "hero": {
+    "eyebrow": "Development studio + AI",
+    "title": "We craft software, experiences, and worlds powered by AI.",
+    "description": "Nomad Byte Studio is a nomadic lab for engineering and design. We build digital products—apps, websites, games, and automations—with a futuristic, elegant, results-driven mindset.",
+    "cardTitle": "Current focus",
+    "cardItem1": "Interactive AI-powered websites",
+    "cardItem2": "Discord bots and automation",
+    "cardItem3": "Narrative-driven games"
+  },
+  "stats": {
+    "ai": "Intelligent flows that reduce time and cost.",
+    "ux": "Dark futuristic design to elevate your brand.",
+    "fullstack": "From concept to launch with one team."
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "A flexible studio to build any type of product.",
+    "description": "We design and develop custom solutions blending software and artificial intelligence.",
+    "web": {
+      "title": "Web platforms",
+      "body": "Fast, scalable, and secure applications with premium experiences."
+    },
+    "mobile": {
+      "title": "Mobile apps",
+      "body": "Elegant iOS and Android interfaces with offline capabilities."
+    },
+    "games": {
+      "title": "Games",
+      "body": "Immersive mechanics, interactive storytelling, and original digital art."
+    },
+    "ai": {
+      "title": "AI + automation",
+      "body": "Bots, agents, and smart workflows connected to your business."
+    }
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Modular portfolio ready to scale.",
+    "description": "Separate your projects by category. Replace the samples with your real work.",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "bots": "Bots",
+      "games": "Games",
+      "ai": "AI"
+    },
+    "sample": {
+      "web": "Dynamic landing page with visual storytelling and micro-interactions.",
+      "bots": "Modular bots with dashboard and analytics.",
+      "games": "Narrative prototype with cyber-noir aesthetics.",
+      "ai": "Agent that optimizes processes and suggests improvements."
+    }
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "A clear path from idea to launch.",
+    "step1": {
+      "title": "Discovery",
+      "body": "Workshop to define vision, scope, and measurable goals."
+    },
+    "step2": {
+      "title": "Design & prototyping",
+      "body": "Wireframes, futuristic UI, and rapid validation."
+    },
+    "step3": {
+      "title": "Development",
+      "body": "Solid architecture, AI integration, and continuous delivery."
+    },
+    "step4": {
+      "title": "Growth",
+      "body": "Scale, measure, and optimize for the next level."
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let’s connect and build your next product.",
+    "description": "Fill out the form for a quick response. The form integrates with Supabase.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "type": "Project type",
+      "message": "Message",
+      "submit": "Send message",
+      "options": {
+        "web": "Web / App",
+        "games": "Game",
+        "ai": "AI / Automation",
+        "other": "Other"
+      }
+    },
+    "panel": {
+      "title": "Supabase ready",
+      "body": "Add your URL and anon key. Data will be sent to the contacts table.",
+      "details": "You need a table with these fields:",
+      "schema": "Full SQL schema is available in supabase/schema.sql."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "backToTop": "Back to top"
+  },
+  "status": {
+    "missingConfig": "Add your Supabase URL and anon key in script.js to enable submissions.",
+    "error": "There was an error sending the message.",
+    "success": "Message sent successfully."
+  }
+}

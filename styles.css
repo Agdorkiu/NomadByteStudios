@@ -91,7 +91,8 @@ body {
   transition: color 0.2s ease;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a.active {
   color: var(--text);
 }
 
@@ -99,6 +100,15 @@ body {
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+.language-select select {
+  background: rgba(8, 11, 17, 0.8);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.85rem;
 }
 
 .primary-btn,

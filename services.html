@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nomad Byte Studio</title>
+  <title>Servicios | Nomad Byte Studio</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,8 +42,8 @@
       </div>
     </div>
     <nav class="nav">
-      <a class="active" href="index.html" data-i18n="nav.home">Inicio</a>
-      <a href="services.html" data-i18n="nav.services">Servicios</a>
+      <a href="index.html" data-i18n="nav.home">Inicio</a>
+      <a class="active" href="services.html" data-i18n="nav.services">Servicios</a>
       <a href="projects.html" data-i18n="nav.projects">Proyectos</a>
       <a href="process.html" data-i18n="nav.process">Metodología</a>
       <a href="contact.html" data-i18n="nav.contact">Contacto</a>
@@ -60,43 +60,31 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Estudio de desarrollo + IA</p>
-        <h1 data-i18n="hero.title">Creamos software, experiencias y mundos con inteligencia artificial.</h1>
-        <p class="hero-description" data-i18n="hero.description">
-          Nomad Byte Studio es un laboratorio nómada de ingeniería y diseño. Construimos productos digitales
-          —apps, webs, videojuegos y automatizaciones— con una visión futurista, elegante y centrada en resultados.
+    <section class="section">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="services.eyebrow">Servicios</p>
+        <h2 data-i18n="services.title">Un estudio flexible para construir cualquier tipo de producto.</h2>
+        <p class="section-description" data-i18n="services.description">
+          Diseñamos y desarrollamos soluciones a medida combinando software tradicional con inteligencia artificial.
         </p>
-        <div class="hero-actions">
-          <a class="primary-btn" href="projects.html" data-i18n="cta.secondary">Ver proyectos</a>
-          <a class="ghost-btn" href="contact.html" data-i18n="cta.tertiary">Hablemos</a>
-        </div>
-        <div class="hero-stats">
-          <div>
-            <span class="stat">AI</span>
-            <p data-i18n="stats.ai">Flujos inteligentes que reducen tiempos y costos.</p>
-          </div>
-          <div>
-            <span class="stat">UX</span>
-            <p data-i18n="stats.ux">Diseño oscuro y futurista para destacar tu marca.</p>
-          </div>
-          <div>
-            <span class="stat">Full-stack</span>
-            <p data-i18n="stats.fullstack">Del concepto al despliegue, todo en un mismo equipo.</p>
-          </div>
-        </div>
       </div>
-      <div class="hero-visual">
-        <div class="orb"></div>
-        <div class="glass-card">
-          <p class="glass-title" data-i18n="hero.cardTitle">Proyectos actuales</p>
-          <ul>
-            <li data-i18n="hero.cardItem1">Webs interactivas con IA</li>
-            <li data-i18n="hero.cardItem2">Bots de Discord y automatización</li>
-            <li data-i18n="hero.cardItem3">Videojuegos narrativos</li>
-          </ul>
-        </div>
+      <div class="grid">
+        <article class="card">
+          <h3 data-i18n="services.web.title">Plataformas web</h3>
+          <p data-i18n="services.web.body">Aplicaciones rápidas, escalables y seguras con experiencias premium.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="services.mobile.title">Apps móviles</h3>
+          <p data-i18n="services.mobile.body">Interfaces elegantes para iOS y Android con funciones offline.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="services.games.title">Videojuegos</h3>
+          <p data-i18n="services.games.body">Mecánicas inmersivas, narrativa interactiva y arte digital original.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="services.ai.title">IA + automatización</h3>
+          <p data-i18n="services.ai.body">Bots, agentes y flujos inteligentes conectados a tu negocio.</p>
+        </article>
       </div>
     </section>
   </main>
