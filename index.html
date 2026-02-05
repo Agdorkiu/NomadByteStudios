@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nomad Byte Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <div class="logo">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <div>
+            <p class="logo-title">Nomad Byte Studio</p>
+            <p class="logo-subtitle" data-i18n="tagline">Innovación nómada con IA</p>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <button class="lang-toggle" type="button" id="langToggle">ES / EN</button>
+          <a class="nav-cta" href="#contacto" data-i18n="cta">Hablemos</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">Software + IA sin fronteras</p>
+          <h1 data-i18n="heroTitle">Creamos experiencias digitales para el mundo real y el mundo virtual.</h1>
+          <p class="hero-text" data-i18n="heroText">
+            Somos una organización creativa que diseña, desarrolla y escala productos digitales, desde apps y
+            plataformas web hasta videojuegos y agentes inteligentes.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#proyectos" data-i18n="heroPrimary">Explorar proyectos</a>
+            <a class="ghost" href="#servicios" data-i18n="heroSecondary">Ver capacidades</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h3>+8</h3>
+              <p data-i18n="stat1">Modelos de IA prototipados</p>
+            </div>
+            <div>
+              <h3>4</h3>
+              <p data-i18n="stat2">Áreas creativas activas</p>
+            </div>
+            <div>
+              <h3>24/7</h3>
+              <p data-i18n="stat3">Operación remota</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb"></div>
+          <div class="grid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="servicios">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="servicesEyebrow">Capacidades</p>
+          <h2 data-i18n="servicesTitle">Soluciones integrales para cada etapa de tu producto.</h2>
+          <p data-i18n="servicesText">
+            De la estrategia a la ejecución. Combinamos diseño, ingeniería y data para entregar resultados tangibles.
+          </p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3 data-i18n="service1Title">Apps & Web</h3>
+            <p data-i18n="service1Text">
+              Diseñamos interfaces elegantes y escalables con stacks modernos, performance optimizada y enfoque mobile-first.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="service2Title">Videojuegos</h3>
+            <p data-i18n="service2Text">
+              Prototipado rápido, narrativa interactiva y sistemas inmersivos para experiencias únicas.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="service3Title">IA & Automatización</h3>
+            <p data-i18n="service3Text">
+              Modelos inteligentes, chatbots, flujos automáticos y agentes que amplifican tu operación.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="service4Title">Ecosistemas digitales</h3>
+            <p data-i18n="service4Text">
+              Arquitecturas sólidas, integraciones API, DevOps y analítica para operar a escala global.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="proyectos">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="projectsEyebrow">Portafolio</p>
+          <h2 data-i18n="projectsTitle">Proyectos vivos y en expansión.</h2>
+          <p data-i18n="projectsText">
+            Aquí puedes destacar entregas actuales y futuras. Cada categoría está preparada para crecer.
+          </p>
+        </div>
+        <div class="project-layout">
+          <div class="project-category">
+            <h3 data-i18n="projectsWeb">Web & Apps</h3>
+            <ul id="projectsWeb"></ul>
+          </div>
+          <div class="project-category">
+            <h3 data-i18n="projectsGames">Videojuegos</h3>
+            <ul id="projectsGames"></ul>
+          </div>
+          <div class="project-category">
+            <h3 data-i18n="projectsAi">IA & Bots</h3>
+            <ul id="projectsAi"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="metodologia">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="methodEyebrow">Cómo trabajamos</p>
+          <h2 data-i18n="methodTitle">Una mentalidad nómada, procesos ágiles.</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-step">
+            <span>01</span>
+            <h3 data-i18n="method1Title">Exploración</h3>
+            <p data-i18n="method1Text">Entendemos la visión, el mercado y las métricas clave.</p>
+          </div>
+          <div class="timeline-step">
+            <span>02</span>
+            <h3 data-i18n="method2Title">Diseño y prototipo</h3>
+            <p data-i18n="method2Text">Modelamos experiencias, flujos IA y prototipos iterativos.</p>
+          </div>
+          <div class="timeline-step">
+            <span>03</span>
+            <h3 data-i18n="method3Title">Desarrollo</h3>
+            <p data-i18n="method3Text">Arquitectura escalable, integraciones y despliegues confiables.</p>
+          </div>
+          <div class="timeline-step">
+            <span>04</span>
+            <h3 data-i18n="method4Title">Crecimiento</h3>
+            <p data-i18n="method4Text">Monitoreo, mejoras continuas y evolución constante.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contacto">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="contactEyebrow">Contacto</p>
+          <h2 data-i18n="contactTitle">Hablemos de tu próximo proyecto.</h2>
+          <p data-i18n="contactText">
+            Prepárate para conectar tu operación con IA, experiencias inmersivas y desarrollo a medida.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3 data-i18n="contactCardTitle">Conecta directo</h3>
+            <p data-i18n="contactCardText">
+              Comparte tu idea y definimos un plan de acción. Contamos con procesos remotos y horarios flexibles.
+            </p>
+            <ul>
+              <li><strong>Email:</strong> hello@nomadbyte.studio</li>
+              <li><strong>Discord:</strong> NomadByte#0001</li>
+              <li><strong>Ubicación:</strong> Remote / Global</li>
+            </ul>
+          </div>
+          <form class="contact-form">
+            <label>
+              <span data-i18n="formName">Nombre</span>
+              <input type="text" placeholder="Nombre" />
+            </label>
+            <label>
+              <span data-i18n="formEmail">Email</span>
+              <input type="email" placeholder="correo@ejemplo.com" />
+            </label>
+            <label>
+              <span data-i18n="formType">Tipo de proyecto</span>
+              <input type="text" placeholder="App, web, juego, IA..." />
+            </label>
+            <label>
+              <span data-i18n="formMessage">Mensaje</span>
+              <textarea rows="4" placeholder="Cuéntanos lo esencial"></textarea>
+            </label>
+            <button type="button" class="primary" data-i18n="formButton">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2024 Nomad Byte Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
