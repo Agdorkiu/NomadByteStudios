@@ -1,0 +1,121 @@
+{
+  "tagline": "Tecnología nómada. Inteligencia creativa.",
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "process": "Metodología",
+    "contact": "Contacto"
+  },
+  "cta": {
+    "primary": "Agenda una llamada",
+    "secondary": "Ver proyectos",
+    "tertiary": "Hablemos"
+  },
+  "hero": {
+    "eyebrow": "Estudio de desarrollo + IA",
+    "title": "Creamos software, experiencias y mundos con inteligencia artificial.",
+    "description": "Nomad Byte Studio es un laboratorio nómada de ingeniería y diseño. Construimos productos digitales —apps, webs, videojuegos y automatizaciones— con una visión futurista, elegante y centrada en resultados.",
+    "cardTitle": "Proyectos actuales",
+    "cardItem1": "Webs interactivas con IA",
+    "cardItem2": "Bots de Discord y automatización",
+    "cardItem3": "Videojuegos narrativos"
+  },
+  "stats": {
+    "ai": "Flujos inteligentes que reducen tiempos y costos.",
+    "ux": "Diseño oscuro y futurista para destacar tu marca.",
+    "fullstack": "Del concepto al despliegue, todo en un mismo equipo."
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "title": "Un estudio flexible para construir cualquier tipo de producto.",
+    "description": "Diseñamos y desarrollamos soluciones a medida combinando software tradicional con inteligencia artificial.",
+    "web": {
+      "title": "Plataformas web",
+      "body": "Aplicaciones rápidas, escalables y seguras con experiencias premium."
+    },
+    "mobile": {
+      "title": "Apps móviles",
+      "body": "Interfaces elegantes para iOS y Android con funciones offline."
+    },
+    "games": {
+      "title": "Videojuegos",
+      "body": "Mecánicas inmersivas, narrativa interactiva y arte digital original."
+    },
+    "ai": {
+      "title": "IA + automatización",
+      "body": "Bots, agentes y flujos inteligentes conectados a tu negocio."
+    }
+  },
+  "projects": {
+    "eyebrow": "Proyectos",
+    "title": "Portafolio modular y listo para escalar.",
+    "description": "Divide tus proyectos por categorías. Solo reemplaza los textos con tus proyectos reales.",
+    "filters": {
+      "all": "Todo",
+      "web": "Web",
+      "bots": "Bots",
+      "games": "Videojuegos",
+      "ai": "IA"
+    },
+    "sample": {
+      "web": "Landing dinámica con narrativa visual y micro-interacciones.",
+      "bots": "Bots modulares con panel de control y analítica.",
+      "games": "Prototype narrativo con estética cyber-noir.",
+      "ai": "Agente que optimiza procesos y sugiere mejoras."
+    }
+  },
+  "process": {
+    "eyebrow": "Metodología",
+    "title": "Un camino claro desde la idea hasta el lanzamiento.",
+    "step1": {
+      "title": "Exploración",
+      "body": "Workshop para definir visión, alcance y objetivos medibles."
+    },
+    "step2": {
+      "title": "Diseño y prototipado",
+      "body": "Wireframes, UI futurista y validación rápida."
+    },
+    "step3": {
+      "title": "Desarrollo",
+      "body": "Arquitectura sólida, IA integrada y despliegue continuo."
+    },
+    "step4": {
+      "title": "Evolución",
+      "body": "Escalamos, medimos y optimizamos para el siguiente nivel."
+    }
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Conectemos y construyamos tu próximo producto.",
+    "description": "Completa el formulario y recibirás una respuesta rápida. Integramos el formulario con Supabase.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "type": "Tipo de proyecto",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje",
+      "options": {
+        "web": "Web / App",
+        "games": "Videojuego",
+        "ai": "IA / Automatización",
+        "other": "Otro"
+      }
+    },
+    "panel": {
+      "title": "Supabase listo",
+      "body": "Solo agrega tu URL y clave anónima. Los datos se enviarán a la tabla contacts.",
+      "details": "Necesitas una tabla con estos campos:",
+      "schema": "El esquema SQL completo está en supabase/schema.sql."
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "backToTop": "Volver arriba"
+  },
+  "status": {
+    "missingConfig": "Agrega tu URL y clave anónima de Supabase en script.js para activar el envío.",
+    "error": "Ocurrió un error al enviar el mensaje.",
+    "success": "Mensaje enviado correctamente."
+  }
+}
