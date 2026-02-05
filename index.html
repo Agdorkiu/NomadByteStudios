@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nomad Byte Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <nav class="nav">
+          <a class="brand" href="#inicio">
+            <span class="brand-mark" aria-hidden="true">NBS</span>
+            <span class="brand-text">Nomad Byte Studio</span>
+          </a>
+          <div class="nav-links">
+            <a href="#inicio" data-i18n="nav.home">Inicio</a>
+            <a href="#servicios" data-i18n="nav.services">Servicios</a>
+            <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+            <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+          </div>
+          <div class="nav-actions">
+            <button class="lang-toggle" data-lang="es">ES</button>
+            <button class="lang-toggle" data-lang="en">EN</button>
+            <a class="cta" href="#contacto" data-i18n="nav.cta">Hablemos</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section id="inicio" class="hero">
+          <div class="hero-content">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Studio de desarrollo con IA</p>
+            <h1 data-i18n="hero.title">Creamos experiencias digitales nómadas, inteligentes y elegantes.</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+              Desde apps y web hasta videojuegos y automatizaciones, diseñamos soluciones con un enfoque futurista
+              y oscuro que conecta tecnología e imaginación.
+            </p>
+            <div class="hero-actions">
+              <a class="cta" href="#proyectos" data-i18n="hero.ctaPrimary">Ver proyectos</a>
+              <a class="ghost" href="#contacto" data-i18n="hero.ctaSecondary">Contactar</a>
+            </div>
+            <div class="hero-badges">
+              <span data-i18n="hero.badge1">IA aplicada</span>
+              <span data-i18n="hero.badge2">Experiencias inmersivas</span>
+              <span data-i18n="hero.badge3">Escalabilidad total</span>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="logo-placeholder">
+              <span data-i18n="hero.logoLabel">Tu logo aquí</span>
+            </div>
+            <div class="hero-card-content">
+              <h2 data-i18n="hero.cardTitle">Nomad Byte Studio</h2>
+              <p data-i18n="hero.cardBody">
+                Un laboratorio creativo para construir software, productos digitales y universos interactivos con IA.
+              </p>
+              <ul>
+                <li data-i18n="hero.cardBullet1">Diseño + desarrollo integral</li>
+                <li data-i18n="hero.cardBullet2">Automatización inteligente</li>
+                <li data-i18n="hero.cardBullet3">Entrega rápida y flexible</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="servicios" class="section services">
+          <div class="section-header">
+            <h2 data-i18n="services.title">Servicios que evolucionan contigo</h2>
+            <p data-i18n="services.subtitle">
+              Creamos soluciones a medida para distintos formatos digitales, combinando creatividad, ingeniería y IA.
+            </p>
+          </div>
+          <div class="grid services-grid">
+            <article>
+              <h3 data-i18n="services.web.title">Web & Plataformas</h3>
+              <p data-i18n="services.web.body">
+                Sitios y plataformas escalables, rápidas y con identidad visual potente.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="services.apps.title">Apps & Sistemas</h3>
+              <p data-i18n="services.apps.body">
+                Aplicaciones móviles y sistemas internos conectados con tus flujos de negocio.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="services.games.title">Videojuegos & Experiencias</h3>
+              <p data-i18n="services.games.body">
+                Narrativas interactivas, prototipos jugables y experiencias inmersivas.
+              </p>
+            </article>
+            <article>
+              <h3 data-i18n="services.ai.title">IA & Automatización</h3>
+              <p data-i18n="services.ai.body">
+                Bots, asistentes y procesos automáticos para potenciar productividad y creatividad.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="proyectos" class="section projects">
+          <div class="section-header">
+            <h2 data-i18n="projects.title">Proyectos en movimiento</h2>
+            <p data-i18n="projects.subtitle">
+              Organiza tu portafolio por categorías. Conecta con Supabase para cargar tus proyectos en vivo.
+            </p>
+          </div>
+          <div class="projects-columns">
+            <div class="projects-column">
+              <h3 data-i18n="projects.web.title">Web</h3>
+              <div class="project-card" data-project-category="web">
+                <h4 data-i18n="projects.web.sampleTitle">Sitio corporativo interactivo</h4>
+                <p data-i18n="projects.web.sampleBody">
+                  Página web moderna con animaciones sutiles y panel de administración.
+                </p>
+                <span class="tag" data-i18n="projects.tags.inProgress">En progreso</span>
+              </div>
+            </div>
+            <div class="projects-column">
+              <h3 data-i18n="projects.games.title">Videojuegos</h3>
+              <div class="project-card" data-project-category="games">
+                <h4 data-i18n="projects.games.sampleTitle">Prototipo narrativo</h4>
+                <p data-i18n="projects.games.sampleBody">
+                  Experiencia interactiva enfocada en storytelling y estética futurista.
+                </p>
+                <span class="tag" data-i18n="projects.tags.lab">Laboratorio</span>
+              </div>
+            </div>
+            <div class="projects-column">
+              <h3 data-i18n="projects.bots.title">Bots & IA</h3>
+              <div class="project-card" data-project-category="bots">
+                <h4 data-i18n="projects.bots.sampleTitle">Bots de Discord inteligentes</h4>
+                <p data-i18n="projects.bots.sampleBody">
+                  Automatización de comunidades y moderación con IA.
+                </p>
+                <span class="tag" data-i18n="projects.tags.active">Activo</span>
+              </div>
+            </div>
+            <div class="projects-column">
+              <h3 data-i18n="projects.apps.title">Apps & Sistemas</h3>
+              <div class="project-card" data-project-category="apps">
+                <h4 data-i18n="projects.apps.sampleTitle">App de productividad nómada</h4>
+                <p data-i18n="projects.apps.sampleBody">
+                  Herramienta para equipos distribuidos con dashboards inteligentes.
+                </p>
+                <span class="tag" data-i18n="projects.tags.roadmap">Roadmap</span>
+              </div>
+            </div>
+          </div>
+          <div class="section-note" data-i18n="projects.note">
+            Conecta tu Supabase y reemplaza estas tarjetas con tus proyectos reales.
+          </div>
+        </section>
+
+        <section id="conexion" class="section supabase">
+          <div class="section-header">
+            <h2 data-i18n="supabase.title">Supabase listo para conectar</h2>
+            <p data-i18n="supabase.subtitle">
+              Deja tus credenciales y sincroniza proyectos y contactos desde una base de datos.
+            </p>
+          </div>
+          <div class="supabase-card">
+            <div>
+              <h3 data-i18n="supabase.cardTitle">Credenciales</h3>
+              <p data-i18n="supabase.cardBody">
+                Reemplaza las variables en <strong>app.js</strong> con tu URL y tu API Key pública.
+              </p>
+              <ul>
+                <li><code>SUPABASE_URL</code></li>
+                <li><code>SUPABASE_ANON_KEY</code></li>
+              </ul>
+            </div>
+            <div>
+              <h3 data-i18n="supabase.schemaTitle">Tablas sugeridas</h3>
+              <p data-i18n="supabase.schemaBody">
+                Puedes crear estas tablas y luego añadir más campos según crezca tu estudio.
+              </p>
+              <div class="schema">
+                <div>
+                  <h4>projects</h4>
+                  <p>id, title, description, category, status, url</p>
+                </div>
+                <div>
+                  <h4>contacts</h4>
+                  <p>id, name, email, message, created_at</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacto" class="section contact">
+          <div class="section-header">
+            <h2 data-i18n="contact.title">Conecta con Nomad Byte Studio</h2>
+            <p data-i18n="contact.subtitle">
+              Cuéntanos sobre tu idea y te responderemos con una propuesta alineada a tu visión.
+            </p>
+          </div>
+          <div class="contact-grid">
+            <form class="contact-form">
+              <label>
+                <span data-i18n="contact.form.name">Nombre</span>
+                <input type="text" name="name" placeholder="Nomad" />
+              </label>
+              <label>
+                <span data-i18n="contact.form.email">Email</span>
+                <input type="email" name="email" placeholder="hola@nomadbyte.studio" />
+              </label>
+              <label>
+                <span data-i18n="contact.form.message">Mensaje</span>
+                <textarea name="message" rows="4" placeholder="Cuéntanos tu proyecto..."></textarea>
+              </label>
+              <button type="submit" class="cta" data-i18n="contact.form.submit">Enviar mensaje</button>
+              <p class="form-hint" data-i18n="contact.form.hint">
+                Este formulario está listo para integrarse con Supabase.
+              </p>
+            </form>
+            <div class="contact-info">
+              <div>
+                <h3 data-i18n="contact.info.title">Contacto directo</h3>
+                <p data-i18n="contact.info.body">
+                  También puedes escribirnos en redes o coordinar una reunión personalizada.
+                </p>
+              </div>
+              <ul>
+                <li>Discord: NomadByteStudio</li>
+                <li>Email: hola@nomadbyte.studio</li>
+                <li>LinkedIn: /nomad-byte-studio</li>
+              </ul>
+              <div class="highlight">
+                <h4 data-i18n="contact.info.highlightTitle">Disponible para colaborar</h4>
+                <p data-i18n="contact.info.highlightBody">Nuevas ideas, partners y proyectos en crecimiento.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <strong>Nomad Byte Studio</strong>
+          <p data-i18n="footer.tagline">Exploramos tecnología, creamos futuro.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#inicio" data-i18n="footer.home">Inicio</a>
+          <a href="#proyectos" data-i18n="footer.projects">Proyectos</a>
+          <a href="#contacto" data-i18n="footer.contact">Contacto</a>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
