@@ -1,205 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nomad Byte Studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav">
-        <div class="logo">
-          <span class="logo-mark" aria-hidden="true"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nomad Byte Studio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <div class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 200 200" role="img" aria-labelledby="logoTitle">
+          <title id="logoTitle">Nomad Byte Studio</title>
+          <defs>
+            <linearGradient id="logoGlow" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#d3f1ff" />
+              <stop offset="100%" stop-color="#7c8dff" />
+            </linearGradient>
+          </defs>
+          <circle cx="100" cy="100" r="88" fill="url(#logoGlow)" opacity="0.15" />
+          <circle cx="100" cy="100" r="70" fill="none" stroke="url(#logoGlow)" stroke-width="4" />
+          <path
+            d="M92 60c8 0 14 6 14 14 0 5-2 9-6 12l-4 3v18l10 16 16 4c5 2 8 6 8 12 0 8-6 14-14 14-7 0-12-4-14-10l-18-7-9 6c-3 2-6 3-9 3-8 0-14-6-14-14 0-6 3-11 8-13l11-5V92l-4-3c-4-3-6-7-6-12 0-8 6-14 14-14z"
+            fill="#e7f7ff"
+            opacity="0.85"
+          />
+        </svg>
+      </div>
+      <div>
+        <p class="logo-title">Nomad Byte Studio</p>
+        <p class="logo-subtitle" data-i18n="tagline">Tecnología nómada. Inteligencia creativa.</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#inicio" data-i18n="nav.home">Inicio</a>
+      <a href="#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+      <a href="#metodologia" data-i18n="nav.process">Metodología</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button id="languageToggle" class="ghost-btn" type="button">EN</button>
+      <a class="primary-btn" href="#contacto" data-i18n="cta.primary">Agenda una llamada</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Estudio de desarrollo + IA</p>
+        <h1 data-i18n="hero.title">Creamos software, experiencias y mundos con inteligencia artificial.</h1>
+        <p class="hero-description" data-i18n="hero.description">
+          Nomad Byte Studio es un laboratorio nómada de ingeniería y diseño. Construimos productos digitales
+          —apps, webs, videojuegos y automatizaciones— con una visión futurista, elegante y centrada en resultados.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#proyectos" data-i18n="cta.secondary">Ver proyectos</a>
+          <a class="ghost-btn" href="#contacto" data-i18n="cta.tertiary">Hablemos</a>
+        </div>
+        <div class="hero-stats">
           <div>
-            <p class="logo-title">Nomad Byte Studio</p>
-            <p class="logo-subtitle" data-i18n="tagline">Innovación nómada con IA</p>
+            <span class="stat">AI</span>
+            <p data-i18n="stats.ai">Flujos inteligentes que reducen tiempos y costos.</p>
+          </div>
+          <div>
+            <span class="stat">UX</span>
+            <p data-i18n="stats.ux">Diseño oscuro y futurista para destacar tu marca.</p>
+          </div>
+          <div>
+            <span class="stat">Full-stack</span>
+            <p data-i18n="stats.fullstack">Del concepto al despliegue, todo en un mismo equipo.</p>
           </div>
         </div>
-        <div class="nav-actions">
-          <button class="lang-toggle" type="button" id="langToggle">ES / EN</button>
-          <a class="nav-cta" href="#contacto" data-i18n="cta">Hablemos</a>
+      </div>
+      <div class="hero-visual">
+        <div class="orb"></div>
+        <div class="glass-card">
+          <p class="glass-title" data-i18n="hero.cardTitle">Proyectos actuales</p>
+          <ul>
+            <li data-i18n="hero.cardItem1">Webs interactivas con IA</li>
+            <li data-i18n="hero.cardItem2">Bots de Discord y automatización</li>
+            <li data-i18n="hero.cardItem3">Videojuegos narrativos</li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <main>
-      <section class="hero" id="inicio">
-        <div class="hero-content">
-          <p class="eyebrow" data-i18n="heroEyebrow">Software + IA sin fronteras</p>
-          <h1 data-i18n="heroTitle">Creamos experiencias digitales para el mundo real y el mundo virtual.</h1>
-          <p class="hero-text" data-i18n="heroText">
-            Somos una organización creativa que diseña, desarrolla y escala productos digitales, desde apps y
-            plataformas web hasta videojuegos y agentes inteligentes.
+    <section id="servicios" class="section">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="services.eyebrow">Servicios</p>
+        <h2 data-i18n="services.title">Un estudio flexible para construir cualquier tipo de producto.</h2>
+        <p class="section-description" data-i18n="services.description">
+          Diseñamos y desarrollamos soluciones a medida combinando software tradicional con inteligencia artificial.
+        </p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3 data-i18n="services.web.title">Plataformas web</h3>
+          <p data-i18n="services.web.body">Aplicaciones rápidas, escalables y seguras con experiencias premium.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="services.mobile.title">Apps móviles</h3>
+          <p data-i18n="services.mobile.body">Interfaces elegantes para iOS y Android con funciones offline.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="services.games.title">Videojuegos</h3>
+          <p data-i18n="services.games.body">Mecánicas inmersivas, narrativa interactiva y arte digital original.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="services.ai.title">IA + automatización</h3>
+          <p data-i18n="services.ai.body">Bots, agentes y flujos inteligentes conectados a tu negocio.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="projects.eyebrow">Proyectos</p>
+        <h2 data-i18n="projects.title">Portafolio modular y listo para escalar.</h2>
+        <p class="section-description" data-i18n="projects.description">
+          Divide tus proyectos por categorías. Solo reemplaza los textos con tus proyectos reales.
+        </p>
+      </div>
+      <div class="filters" role="tablist">
+        <button class="filter-btn active" data-filter="all" data-i18n="projects.filters.all">Todo</button>
+        <button class="filter-btn" data-filter="web" data-i18n="projects.filters.web">Web</button>
+        <button class="filter-btn" data-filter="bots" data-i18n="projects.filters.bots">Bots</button>
+        <button class="filter-btn" data-filter="games" data-i18n="projects.filters.games">Videojuegos</button>
+        <button class="filter-btn" data-filter="ai" data-i18n="projects.filters.ai">IA</button>
+      </div>
+      <div class="grid projects-grid">
+        <article class="card project" data-category="web">
+          <h3>Nomad Web Experience</h3>
+          <p data-i18n="projects.sample.web">Landing dinámica con narrativa visual y micro-interacciones.</p>
+          <span class="tag">Web</span>
+        </article>
+        <article class="card project" data-category="bots">
+          <h3>Discord Automation Suite</h3>
+          <p data-i18n="projects.sample.bots">Bots modulares con panel de control y analítica.</p>
+          <span class="tag">Bots</span>
+        </article>
+        <article class="card project" data-category="games">
+          <h3>Echoes of Nomad</h3>
+          <p data-i18n="projects.sample.games">Prototype narrativo con estética cyber-noir.</p>
+          <span class="tag">Game</span>
+        </article>
+        <article class="card project" data-category="ai">
+          <h3>AI Ops Compass</h3>
+          <p data-i18n="projects.sample.ai">Agente que optimiza procesos y sugiere mejoras.</p>
+          <span class="tag">AI</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="metodologia" class="section">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="process.eyebrow">Metodología</p>
+        <h2 data-i18n="process.title">Un camino claro desde la idea hasta el lanzamiento.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-step">
+          <span>01</span>
+          <h3 data-i18n="process.step1.title">Exploración</h3>
+          <p data-i18n="process.step1.body">Workshop para definir visión, alcance y objetivos medibles.</p>
+        </div>
+        <div class="timeline-step">
+          <span>02</span>
+          <h3 data-i18n="process.step2.title">Diseño y prototipado</h3>
+          <p data-i18n="process.step2.body">Wireframes, UI futurista y validación rápida.</p>
+        </div>
+        <div class="timeline-step">
+          <span>03</span>
+          <h3 data-i18n="process.step3.title">Desarrollo</h3>
+          <p data-i18n="process.step3.body">Arquitectura sólida, IA integrada y despliegue continuo.</p>
+        </div>
+        <div class="timeline-step">
+          <span>04</span>
+          <h3 data-i18n="process.step4.title">Evolución</h3>
+          <p data-i18n="process.step4.body">Escalamos, medimos y optimizamos para el siguiente nivel.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+        <h2 data-i18n="contact.title">Conectemos y construyamos tu próximo producto.</h2>
+        <p class="section-description" data-i18n="contact.description">
+          Completa el formulario y recibirás una respuesta rápida. Integramos el formulario con Supabase.
+        </p>
+      </div>
+      <div class="contact-wrapper">
+        <form id="contactForm" class="contact-form">
+          <label>
+            <span data-i18n="contact.form.name">Nombre</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span data-i18n="contact.form.email">Correo</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span data-i18n="contact.form.type">Tipo de proyecto</span>
+            <select name="type" required>
+              <option value="web" data-i18n="contact.form.options.web">Web / App</option>
+              <option value="game" data-i18n="contact.form.options.games">Videojuego</option>
+              <option value="ai" data-i18n="contact.form.options.ai">IA / Automatización</option>
+              <option value="other" data-i18n="contact.form.options.other">Otro</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="contact.form.message">Mensaje</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="primary-btn" type="submit" data-i18n="contact.form.submit">Enviar mensaje</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+        <div class="contact-panel">
+          <h3 data-i18n="contact.panel.title">Supabase listo</h3>
+          <p data-i18n="contact.panel.body">
+            Solo agrega tu URL y clave anónima. Los datos se enviarán a la tabla <strong>contacts</strong>.
           </p>
-          <div class="hero-actions">
-            <a class="primary" href="#proyectos" data-i18n="heroPrimary">Explorar proyectos</a>
-            <a class="ghost" href="#servicios" data-i18n="heroSecondary">Ver capacidades</a>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <h3>+8</h3>
-              <p data-i18n="stat1">Modelos de IA prototipados</p>
-            </div>
-            <div>
-              <h3>4</h3>
-              <p data-i18n="stat2">Áreas creativas activas</p>
-            </div>
-            <div>
-              <h3>24/7</h3>
-              <p data-i18n="stat3">Operación remota</p>
-            </div>
-          </div>
+          <ul>
+            <li><strong>name</strong> (text)</li>
+            <li><strong>email</strong> (text)</li>
+            <li><strong>type</strong> (text)</li>
+            <li><strong>message</strong> (text)</li>
+            <li><strong>created_at</strong> (timestamp)</li>
+          </ul>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="orb"></div>
-          <div class="grid"></div>
-        </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section class="section" id="servicios">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="servicesEyebrow">Capacidades</p>
-          <h2 data-i18n="servicesTitle">Soluciones integrales para cada etapa de tu producto.</h2>
-          <p data-i18n="servicesText">
-            De la estrategia a la ejecución. Combinamos diseño, ingeniería y data para entregar resultados tangibles.
-          </p>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <h3 data-i18n="service1Title">Apps & Web</h3>
-            <p data-i18n="service1Text">
-              Diseñamos interfaces elegantes y escalables con stacks modernos, performance optimizada y enfoque mobile-first.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="service2Title">Videojuegos</h3>
-            <p data-i18n="service2Text">
-              Prototipado rápido, narrativa interactiva y sistemas inmersivos para experiencias únicas.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="service3Title">IA & Automatización</h3>
-            <p data-i18n="service3Text">
-              Modelos inteligentes, chatbots, flujos automáticos y agentes que amplifican tu operación.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="service4Title">Ecosistemas digitales</h3>
-            <p data-i18n="service4Text">
-              Arquitecturas sólidas, integraciones API, DevOps y analítica para operar a escala global.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="proyectos">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="projectsEyebrow">Portafolio</p>
-          <h2 data-i18n="projectsTitle">Proyectos vivos y en expansión.</h2>
-          <p data-i18n="projectsText">
-            Aquí puedes destacar entregas actuales y futuras. Cada categoría está preparada para crecer.
-          </p>
-        </div>
-        <div class="project-layout">
-          <div class="project-category">
-            <h3 data-i18n="projectsWeb">Web & Apps</h3>
-            <ul id="projectsWeb"></ul>
-          </div>
-          <div class="project-category">
-            <h3 data-i18n="projectsGames">Videojuegos</h3>
-            <ul id="projectsGames"></ul>
-          </div>
-          <div class="project-category">
-            <h3 data-i18n="projectsAi">IA & Bots</h3>
-            <ul id="projectsAi"></ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="metodologia">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="methodEyebrow">Cómo trabajamos</p>
-          <h2 data-i18n="methodTitle">Una mentalidad nómada, procesos ágiles.</h2>
-        </div>
-        <div class="timeline">
-          <div class="timeline-step">
-            <span>01</span>
-            <h3 data-i18n="method1Title">Exploración</h3>
-            <p data-i18n="method1Text">Entendemos la visión, el mercado y las métricas clave.</p>
-          </div>
-          <div class="timeline-step">
-            <span>02</span>
-            <h3 data-i18n="method2Title">Diseño y prototipo</h3>
-            <p data-i18n="method2Text">Modelamos experiencias, flujos IA y prototipos iterativos.</p>
-          </div>
-          <div class="timeline-step">
-            <span>03</span>
-            <h3 data-i18n="method3Title">Desarrollo</h3>
-            <p data-i18n="method3Text">Arquitectura escalable, integraciones y despliegues confiables.</p>
-          </div>
-          <div class="timeline-step">
-            <span>04</span>
-            <h3 data-i18n="method4Title">Crecimiento</h3>
-            <p data-i18n="method4Text">Monitoreo, mejoras continuas y evolución constante.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact" id="contacto">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="contactEyebrow">Contacto</p>
-          <h2 data-i18n="contactTitle">Hablemos de tu próximo proyecto.</h2>
-          <p data-i18n="contactText">
-            Prepárate para conectar tu operación con IA, experiencias inmersivas y desarrollo a medida.
-          </p>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3 data-i18n="contactCardTitle">Conecta directo</h3>
-            <p data-i18n="contactCardText">
-              Comparte tu idea y definimos un plan de acción. Contamos con procesos remotos y horarios flexibles.
-            </p>
-            <ul>
-              <li><strong>Email:</strong> hello@nomadbyte.studio</li>
-              <li><strong>Discord:</strong> NomadByte#0001</li>
-              <li><strong>Ubicación:</strong> Remote / Global</li>
-            </ul>
-          </div>
-          <form class="contact-form">
-            <label>
-              <span data-i18n="formName">Nombre</span>
-              <input type="text" placeholder="Nombre" />
-            </label>
-            <label>
-              <span data-i18n="formEmail">Email</span>
-              <input type="email" placeholder="correo@ejemplo.com" />
-            </label>
-            <label>
-              <span data-i18n="formType">Tipo de proyecto</span>
-              <input type="text" placeholder="App, web, juego, IA..." />
-            </label>
-            <label>
-              <span data-i18n="formMessage">Mensaje</span>
-              <textarea rows="4" placeholder="Cuéntanos lo esencial"></textarea>
-            </label>
-            <button type="button" class="primary" data-i18n="formButton">Enviar</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>© 2024 Nomad Byte Studio. All rights reserved.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="script.js"></script>
-  </body>
+  <footer class="site-footer">
+    <p>© 2024 Nomad Byte Studio. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+    <div class="footer-links">
+      <a href="#inicio" data-i18n="footer.backToTop">Volver arriba</a>
+      <span>hello@nomadbyte.studio</span>
+    </div>
+  </footer>
+</body>
 </html>
